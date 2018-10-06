@@ -1,7 +1,7 @@
 ''' The module defines user bucketlist and its methods'''
 import uuid
 from datetime import date
-
+ 
 class UserBucketlist():
     def __init__(self):
         #A list to store user bucketlists

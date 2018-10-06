@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css"> -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container r-cont1 mt-5">
+        <div class="row r-cont1-row1 justify-content-center">
+            <div class="col-md-6 r-cont1-row1-col1">
+
+                <h4>Register Here</h4>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="username">Your Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Your Username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Enter Your Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm password">Confirm Your Password</label>
+                        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Your Password">
+                    </div>
+
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
